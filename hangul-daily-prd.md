@@ -57,12 +57,12 @@ The game has two distinct puzzle layers, played in sequence:
 The user is presented with a set of individual tiles (자음 and 모음) and must tap them into the correct slots (초성 / 중성 / 종성) to assemble the syllable block.
 
 - Each tile shows only **one single character** — either one 자음 or one 모음, never a combination
-- Slots are shown separately: 자음 tiles appear for 초성 and 종성 slots, 모음 tiles appear for 중성 slots
-- Each slot gets its own fresh set of tiles when selected
+- All tiles for the current syllable (자음 and 모음 combined) are shown at once in a single shuffled bank — the user is not guided toward specific slots
 - Decoy tiles are carefully chosen to teach common mix-ups (e.g. ㅏ vs ㅓ, ㅂ vs ㅍ)
 - When the user first enters the game screen, 초성 is selected by default
-- After that, the user can tap any slot freely to select it
+- The user can tap any slot in the word grid to switch selection; tapping a filled slot clears it for re-entry
 - A live preview renders the syllable block in real time as tiles are placed
+- **The syllable is validated only when all required slots are fully filled.** If any slot is incorrect, the wrong cells shake and clear — one mistake is recorded per failed submission, not per tile
 
 **Layer 2 — Place the Syllable into the Word**
 
@@ -105,20 +105,21 @@ The user selects a difficulty level on Screen 1 before starting. The level affec
 
 ### Screen 2 — Syllable Builder
 
-1. At the top: the word grid showing the target word with filled and blank syllable slots
-2. In the centre: the syllable construction area — three slots labelled 초성, 중성, 종성
-   - 초성 is selected by default when the screen first loads
-   - The user can tap any slot to switch selection
-3. Below the slots: a curated set of tiles for the currently selected slot
-   - 자음 tiles for 초성 and 종성 slots
-   - 모음 tiles for 중성 slots
+1. At the top: the word grid showing every syllable as a structured jamo grid
+   - Each syllable group has **초성 | 중성** in the top row; if 종성 is present, it spans the full width in a second row below (matching the visual structure of a Korean syllable block as shown in the reference diagram)
+   - Completed syllables show their placed jamo; the current syllable shows filled/empty cells; future syllables are dimmed
+   - The user taps a cell to select that slot; tapping a filled cell clears it for re-entry
+2. In the centre: a live preview renders the composed syllable block in real time as jamo are placed
+3. Below the preview: all tiles for the current syllable shown at once in a single shuffled bank
+   - 자음 and 모음 tiles are mixed together — the user must identify and route them correctly
    - Each tile shows one single 자음 or 모음 character only
    - Includes carefully chosen decoy tiles to teach common mix-ups
-4. A live preview renders the syllable in real time as tiles are placed
-5. A sound button to replay the word pronunciation at any time
-6. On correct syllable completion → animates into the word grid, next syllable loads
-7. On incorrect tile selection → tile shakes, mistake is recorded silently
-8. Vibration feedback on tile selection, slot selection, and puzzle completion
+4. A sound button to replay the word pronunciation at any time
+5. 초성 is selected by default when the screen first loads
+6. On correct syllable completion → grid cells animate to completed style, next syllable loads
+7. On incorrect syllable submission (all slots filled but some wrong) → wrong cells shake and clear, one mistake is recorded silently
+8. **Syllable correctness is checked only when all required slots are fully filled** — individual tile placements are not validated
+9. Vibration feedback on tile selection, slot selection, and puzzle completion
 
 ### Screen 3 — Result
 
@@ -153,9 +154,9 @@ Animations are a core part of the experience — they make the app feel polished
 
 | Trigger                     | Animation                                                                                                    |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Tap a tile from the bank    | Tile **flies** from its position in the bank up to the selected slot (Framer Motion shared layout animation) |
-| Correct tile placed in slot | Slot **pulses** with a green glow, tile locks in place                                                       |
-| Incorrect tile placed       | Tile **shakes** horizontally and returns to the bank                                                         |
+| Tap a tile from the bank         | Tile **scales down** on tap and the target grid cell fills with a spring-pop animation                       |
+| Correct tile placed in slot      | Cell shows the jamo with a **green tint**; live preview updates instantly                                    |
+| Incorrect syllable submitted     | Wrong grid cells **shake** horizontally and clear — tiles remain in the bank for retry                       |
 | Syllable fully completed    | Completed syllable block **flies** from the builder area into its position in the word grid                  |
 | All syllables complete      | Word grid **bounces** as a whole, triggering the result screen transition                                    |
 | Slot selected / switched    | Selected slot **scales up** slightly with a highlight border                                                 |
@@ -175,13 +176,13 @@ Animations are a core part of the experience — they make the app feel polished
 | Word Intro Screen         | Word, image, English meaning, romanisation, audio, syllable count | Must Have    |
 | Audio Pronunciation       | Web Speech API, available on Screen 1 and Screen 2                | Must Have    |
 | Word Image                | Static image asset shown on Screen 1 and result screen            | Must Have    |
-| Syllable Builder UI       | 초성 / 중성 / 종성 slots with live preview                        | Must Have    |
-| Curated Tile Bank         | Single 자음 or 모음 per tile, with carefully chosen decoys        | Must Have    |
+| Syllable Builder UI       | Jamo cell grid per syllable (초성\|중성 top row, 종성 bottom row) | Must Have    |
+| Curated Tile Bank         | All tiles shown at once — 자음 and 모음 mixed in one bank         | Must Have    |
 | Default Slot Selection    | 초성 auto-selected on game screen load                            | Must Have    |
 | Live Syllable Preview     | Renders syllable block in real time as tiles are placed           | Must Have    |
-| Word Grid                 | Target word displayed with filled and blank syllable slots        | Must Have    |
-| Flying Tile Animation     | Tile flies from bank to slot on tap                               | Must Have    |
-| Syllable → Grid Animation | Correct syllable flies into grid position on completion           | Must Have    |
+| Word Grid                 | Jamo cell structure visible for all syllables; interactive for current | Must Have |
+| Final-step Validation     | Correctness checked only when all slots filled; wrong cells shake and clear | Must Have |
+| Syllable → Grid Animation | Correct syllable cells animate to completed style on submission   | Must Have    |
 | Accuracy Rating System    | 6-tier rating shown on result screen with message                 | Must Have    |
 | Syllable Breakdown        | Shows components on result screen (e.g. ㅂ+ㅏ+ㅂ=밥)              | Must Have    |
 | Replay Allowed            | User can replay even if already played today                      | Must Have    |
