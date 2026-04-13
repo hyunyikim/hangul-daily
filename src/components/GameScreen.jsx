@@ -35,7 +35,6 @@ export default function GameScreen() {
   const isCompound      = vLayout === 'compound'
   const hasJongsung     = currentSyllable?.components['종성'] !== null
 
-  // Active slots depend on vowel layout type
   const activeSlots = useMemo(() => {
     const slots = ['초성']
     if (isCompound) {
@@ -49,7 +48,6 @@ export default function GameScreen() {
 
   const TILE_LIMIT = level === 'beginner' ? 4 : level === 'intermediate' ? 6 : 8
 
-  // Combined tile bank — correct tiles always included; decoys fill up to TILE_LIMIT.
   const tiles = useMemo(() => {
     const syl = word.syllables[currentIdx]
     if (!syl) return []
@@ -78,7 +76,6 @@ export default function GameScreen() {
     return shuffle([...corrects, ...selectedDecoys])
   }, [currentIdx, word, activeSlots, TILE_LIMIT])
 
-  // ── Slot selection ──────────────────────────────────────────────────────
   function handleSlotSelect(slot) {
     if (isCompleting || !activeSlots.includes(slot)) return
     if (navigator.vibrate) navigator.vibrate(20)
@@ -88,7 +85,6 @@ export default function GameScreen() {
     setSelectedSlot(slot)
   }
 
-  // ── Tile tap ────────────────────────────────────────────────────────────
   function handleTileTap(tile) {
     if (isCompleting) return
     if (navigator.vibrate) navigator.vibrate(30)
@@ -105,7 +101,6 @@ export default function GameScreen() {
     }
   }
 
-  // ── Final-step validation ───────────────────────────────────────────────
   function validateSyllable(newPlaced) {
     const components = currentSyllable.components
     const compound   = COMPOUND_VOWELS[components['중성']]
@@ -132,7 +127,6 @@ export default function GameScreen() {
     }
   }
 
-  // ── Syllable complete ───────────────────────────────────────────────────
   function handleSyllableComplete(block, currentMistakes) {
     if (navigator.vibrate) navigator.vibrate([40, 20, 80])
     setIsCompleting(true)
@@ -158,24 +152,35 @@ export default function GameScreen() {
 
   return (
     <motion.div
-      className="absolute inset-0 overflow-y-auto bg-white"
+      className="absolute inset-0 overflow-y-auto"
+      style={{ background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)' }}
       initial={{ x: '100%' }}
       animate={{ x: 0 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ type: 'tween', ease: 'easeInOut', duration: 0.3 }}
     >
-      <div className="flex flex-col items-center w-full max-w-md mx-auto px-5 pt-10 pb-10 gap-6">
+      <div className="flex flex-col items-center w-full max-w-md mx-auto px-5 pt-8 pb-10 gap-6">
 
-        {/* ── Word image ── */}
-        {word.image && (
-          <img
-            src={word.image}
-            alt={word.english}
-            className="w-24 h-24 object-cover rounded-2xl shadow-sm"
-          />
-        )}
+        {/* Header bar */}
+        <div className="w-full flex items-center justify-between">
+          <p className="text-sm font-medium" style={{ color: 'var(--color-ink-muted)' }}>
+            Syllable{' '}
+            <span style={{ color: 'var(--color-ink)' }}>{currentIdx + 1}</span>
+            {' / '}
+            <span style={{ color: 'var(--color-ink)' }}>{word.syllables.length}</span>
+          </p>
+          <div className="flex items-center gap-2">
+            <AudioButton text={word.korean} size="sm" />
+            <span
+              className="text-lg font-bold"
+              style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-ink)' }}
+            >
+              {word.korean}
+            </span>
+          </div>
+        </div>
 
-        {/* ── Word Grid ── */}
+        {/* Word Grid */}
         <WordGrid
           word={word}
           completedCount={completedCount}
@@ -187,18 +192,7 @@ export default function GameScreen() {
           onSlotSelect={handleSlotSelect}
         />
 
-        {/* ── Audio + progress ── */}
-        <div className="flex items-center gap-3">
-          <AudioButton text={word.korean} size="sm" />
-          <p className="text-xs text-slate-400">
-            Syllable{' '}
-            <span className="font-semibold text-slate-600">{currentIdx + 1}</span>
-            {' '}of{' '}
-            <span className="font-semibold text-slate-600">{word.syllables.length}</span>
-          </p>
-        </div>
-
-        {/* ── Live preview (hidden during completion pause) ── */}
+        {/* Live preview */}
         {!isCompleting && (
           <SyllableBuilder
             placed={placed}
@@ -207,7 +201,7 @@ export default function GameScreen() {
           />
         )}
 
-        {/* ── Combined tile bank (hidden during completion pause) ── */}
+        {/* Tile bank */}
         {!isCompleting && (
           <TileBank tiles={tiles} onTileTap={handleTileTap} />
         )}

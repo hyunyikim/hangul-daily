@@ -32,8 +32,11 @@ export default function AudioButton({ text, size = 'md' }) {
       whileTap={{ scale: 0.88 }}
       animate={playing ? { scale: [1, 1.12, 1] } : { scale: 1 }}
       transition={playing ? { repeat: Infinity, duration: 0.6 } : {}}
-      className={`${sizeClasses[size]} rounded-full flex items-center justify-center
-        bg-violet-100 text-violet-600 hover:bg-violet-200 transition-colors`}
+      className={`${sizeClasses[size]} rounded-full flex items-center justify-center transition-colors cursor-pointer`}
+      style={{
+        background: 'var(--color-blue-pale)',
+        color: 'var(--color-blue)',
+      }}
       aria-label="Play pronunciation"
     >
       🔊

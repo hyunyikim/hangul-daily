@@ -9,10 +9,9 @@ function getLivePreview(placed, jungseong, hasJongsung) {
 
   let jung
   if (compound) {
-    // Compound vowel: need both parts before we can compose
     const V = placed['중성_V'], H = placed['중성_H']
-    if (!V || !H) return cho  // show consonant alone until both parts placed
-    jung = jungseong           // use the full compound vowel character
+    if (!V || !H) return cho
+    jung = jungseong
   } else {
     jung = placed['중성']
     if (!jung) return cho
@@ -27,7 +26,12 @@ export default function SyllableBuilder({ placed, jungseong, hasJongsung }) {
   return (
     <div className="flex flex-col items-center gap-2">
       <motion.div
-        className="w-28 h-28 rounded-3xl flex items-center justify-center border-2 bg-slate-50 border-slate-100"
+        className="w-28 h-28 rounded-3xl flex items-center justify-center"
+        style={{
+          background: '#fff',
+          border: '2px solid var(--color-paper-deep)',
+          boxShadow: '0 2px 12px rgba(91,143,212,0.06)',
+        }}
       >
         {preview ? (
           <motion.span
@@ -35,16 +39,16 @@ export default function SyllableBuilder({ placed, jungseong, hasJongsung }) {
             initial={{ scale: 0.6, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-            className="text-6xl font-black text-slate-900"
-            style={{ fontFamily: 'var(--font-korean)' }}
+            className="text-6xl font-bold"
+            style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-ink)' }}
           >
             {preview}
           </motion.span>
         ) : (
-          <span className="text-4xl text-slate-200">？</span>
+          <span className="text-4xl" style={{ color: 'var(--color-blue-soft)' }}>？</span>
         )}
       </motion.div>
-      <span className="text-xs text-slate-400">미리보기 · Preview</span>
+      <span className="text-xs" style={{ color: 'var(--color-ink-muted)' }}>미리보기 · Preview</span>
     </div>
   )
 }

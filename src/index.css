@@ -1,10 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=DM+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-korean: 'Noto Sans KR', sans-serif;
+  --font-korean: 'Gowun Dodum', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --color-cream: #F5F0E8;
+  --color-paper: #E9F0FB;
+  --color-paper-deep: #D6E4F7;
+  --color-ink: #1A2233;
+  --color-ink-light: #3A4A60;
+  --color-ink-muted: #6B7A8D;
+  --color-blue: #5B8FD4;
+  --color-blue-soft: #A3C4F0;
+  --color-blue-pale: #DCE8F8;
+  --color-tile-bg: #252D3A;
+  --color-tile-border: #353F4F;
+  --color-jade: #4EA07A;
+  --color-jade-soft: #D4F0E4;
+  --color-red-soft: #F5D5D5;
+  --color-red: #D4645A;
 }
 
 * {
   -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-paper);
 }
