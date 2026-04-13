@@ -152,45 +152,45 @@ The rating is displayed prominently, with the encouraging message shown directly
 
 Animations are a core part of the experience — they make the app feel polished and provide meaningful feedback to the learner.
 
-| Trigger                     | Animation                                                                                                    |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Tap a tile from the bank         | Tile **scales down** on tap and the target grid cell fills with a spring-pop animation                       |
-| Correct tile placed in slot      | Cell shows the jamo with a **green tint**; live preview updates instantly                                    |
-| Incorrect syllable submitted     | Wrong grid cells **shake** horizontally and clear — tiles remain in the bank for retry                       |
-| Syllable fully completed    | Completed syllable block **flies** from the builder area into its position in the word grid                  |
-| All syllables complete      | Word grid **bounces** as a whole, triggering the result screen transition                                    |
-| Slot selected / switched    | Selected slot **scales up** slightly with a highlight border                                                 |
-| Screen 1 → Screen 2         | Smooth **slide-in** transition                                                                               |
-| Screen 2 → Screen 3         | **Fade + scale** transition into the result screen                                                           |
-| Result screen loads         | Checkmark animates in with a **spring pop**, rating fades in below                                           |
-| Vibration                   | On tile tap, slot tap, and puzzle completion (Web Vibration API, silent on desktop)                          |
+| Trigger                      | Animation                                                                                   |
+| ---------------------------- | ------------------------------------------------------------------------------------------- |
+| Tap a tile from the bank     | Tile **scales down** on tap and the target grid cell fills with a spring-pop animation      |
+| Correct tile placed in slot  | Cell shows the jamo with a **green tint**; live preview updates instantly                   |
+| Incorrect syllable submitted | Wrong grid cells **shake** horizontally and clear — tiles remain in the bank for retry      |
+| Syllable fully completed     | Completed syllable block **flies** from the builder area into its position in the word grid |
+| All syllables complete       | Word grid **bounces** as a whole, triggering the result screen transition                   |
+| Slot selected / switched     | Selected slot **scales up** slightly with a highlight border                                |
+| Screen 1 → Screen 2          | Smooth **slide-in** transition                                                              |
+| Screen 2 → Screen 3          | **Fade + scale** transition into the result screen                                          |
+| Result screen loads          | Checkmark animates in with a **spring pop**, rating fades in below                          |
+| Vibration                    | On tile tap, slot tap, and puzzle completion (Web Vibration API, silent on desktop)         |
 
 ---
 
 ## 9. Feature Requirements
 
-| Feature                   | Description                                                       | Priority     |
-| ------------------------- | ----------------------------------------------------------------- | ------------ |
-| Daily Word System         | One new word per day, auto-rotated by date index                  | Must Have    |
-| Difficulty Level Selector | Beginner / Intermediate / Advanced, chosen on Screen 1            | Must Have    |
-| Word Intro Screen         | Word, image, English meaning, romanisation, audio, syllable count | Must Have    |
-| Audio Pronunciation       | Web Speech API, available on Screen 1 and Screen 2                | Must Have    |
-| Word Image                | Static image asset shown on Screen 1 and result screen            | Must Have    |
-| Syllable Builder UI       | Jamo cell grid per syllable (초성\|중성 top row, 종성 bottom row) | Must Have    |
-| Curated Tile Bank         | All tiles shown at once — 자음 and 모음 mixed in one bank         | Must Have    |
-| Default Slot Selection    | 초성 auto-selected on game screen load                            | Must Have    |
-| Live Syllable Preview     | Renders syllable block in real time as tiles are placed           | Must Have    |
-| Word Grid                 | Jamo cell structure visible for all syllables; interactive for current | Must Have |
-| Final-step Validation     | Correctness checked only when all slots filled; wrong cells shake and clear | Must Have |
-| Syllable → Grid Animation | Correct syllable cells animate to completed style on submission   | Must Have    |
-| Accuracy Rating System    | 6-tier rating shown on result screen with message                 | Must Have    |
-| Syllable Breakdown        | Shows components on result screen (e.g. ㅂ+ㅏ+ㅂ=밥)              | Must Have    |
-| Replay Allowed            | User can replay even if already played today                      | Must Have    |
-| Mobile Responsive         | Fully playable on phone viewports                                 | Must Have    |
-| Vibration Feedback        | On tile selection, slot selection, and completion                 | Must Have    |
-| Full Animation Suite      | All animations listed in Section 8                                | Must Have    |
-| Progress History          | Calendar view of past played days                                 | Nice to Have |
-| Login / Sync              | Persist history across devices via Supabase                       | Nice to Have |
+| Feature                   | Description                                                                 | Priority     |
+| ------------------------- | --------------------------------------------------------------------------- | ------------ |
+| Daily Word System         | One new word per day, auto-rotated by date index                            | Must Have    |
+| Difficulty Level Selector | Beginner / Intermediate / Advanced, chosen on Screen 1                      | Must Have    |
+| Word Intro Screen         | Word, image, English meaning, romanisation, audio, syllable count           | Must Have    |
+| Audio Pronunciation       | Web Speech API, available on Screen 1 and Screen 2                          | Must Have    |
+| Word Image                | Static image asset shown on Screen 1 and result screen                      | Must Have    |
+| Syllable Builder UI       | Jamo cell grid per syllable (초성\|중성 top row, 종성 bottom row)           | Must Have    |
+| Curated Tile Bank         | All tiles shown at once — 자음 and 모음 mixed in one bank                   | Must Have    |
+| Default Slot Selection    | 초성 auto-selected on game screen load                                      | Must Have    |
+| Live Syllable Preview     | Renders syllable block in real time as tiles are placed                     | Must Have    |
+| Word Grid                 | Jamo cell structure visible for all syllables; interactive for current      | Must Have    |
+| Final-step Validation     | Correctness checked only when all slots filled; wrong cells shake and clear | Must Have    |
+| Syllable → Grid Animation | Correct syllable cells animate to completed style on submission             | Must Have    |
+| Accuracy Rating System    | 6-tier rating shown on result screen with message                           | Must Have    |
+| Syllable Breakdown        | Shows components on result screen (e.g. ㅂ+ㅏ+ㅂ=밥)                        | Must Have    |
+| Replay Allowed            | User can replay even if already played today                                | Must Have    |
+| Mobile Responsive         | Fully playable on phone viewports                                           | Must Have    |
+| Vibration Feedback        | On tile selection, slot selection, and completion                           | Must Have    |
+| Full Animation Suite      | All animations listed in Section 8                                          | Must Have    |
+| Progress History          | Calendar view of past played days                                           | Nice to Have |
+| Login / Sync              | Persist history across devices via Supabase                                 | Nice to Have |
 
 ---
 
