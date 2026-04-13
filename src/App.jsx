@@ -21,7 +21,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="fixed inset-0 overflow-hidden">
+      <div className="fixed inset-0 overflow-clip">
         <AppRoutes />
       </div>
     </BrowserRouter>
