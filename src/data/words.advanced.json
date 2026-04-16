@@ -1,0 +1,880 @@
+[
+  {
+    "id": 31,
+    "level": "advanced",
+    "theme": "food",
+    "image": "/assets/images/banana.png",
+    "korean": "바나나",
+    "romanisation": "banana",
+    "english": "Banana",
+    "syllables": [
+      {
+        "block": "바",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ",
+            "ㅍ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      },
+      {
+        "block": "나",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄹ",
+            "ㅁ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      },
+      {
+        "block": "나",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄹ",
+            "ㅁ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "level": "advanced",
+    "theme": "technology",
+    "image": "/assets/images/computer.png",
+    "korean": "컴퓨터",
+    "romanisation": "keompyuteo",
+    "english": "Computer",
+    "syllables": [
+      {
+        "block": "컴",
+        "components": {
+          "초성": "ㅋ",
+          "중성": "ㅓ",
+          "종성": "ㅁ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "퓨",
+        "components": {
+          "초성": "ㅍ",
+          "중성": "ㅠ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅂ",
+            "ㅁ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅛ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "터",
+        "components": {
+          "초성": "ㅌ",
+          "중성": "ㅓ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄱ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "level": "advanced",
+    "theme": "places",
+    "image": "/assets/images/library.png",
+    "korean": "도서관",
+    "romanisation": "doseogwan",
+    "english": "Library",
+    "syllables": [
+      {
+        "block": "도",
+        "components": {
+          "초성": "ㄷ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅌ",
+            "ㄱ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "서",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅓ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅆ",
+            "ㅈ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      },
+      {
+        "block": "관",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅘ",
+          "종성": "ㄴ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅋ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄹ",
+            "ㅁ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "level": "advanced",
+    "theme": "animals",
+    "image": "/assets/images/cat.png",
+    "korean": "고양이",
+    "romanisation": "goyangi",
+    "english": "Cat",
+    "syllables": [
+      {
+        "block": "고",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "양",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅏ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "이",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ",
+            "ㄹ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "level": "advanced",
+    "theme": "transportation",
+    "image": "/assets/images/airplane.png",
+    "korean": "비행기",
+    "romanisation": "bihaenggi",
+    "english": "Airplane",
+    "syllables": [
+      {
+        "block": "비",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "행",
+        "components": {
+          "초성": "ㅎ",
+          "중성": "ㅐ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅅ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅔ",
+            "ㅏ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "기",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "level": "advanced",
+    "theme": "places",
+    "image": "/assets/images/restaurant.png",
+    "korean": "음식점",
+    "romanisation": "eumsikjeom",
+    "english": "Restaurant",
+    "syllables": [
+      {
+        "block": "음",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅡ",
+          "종성": "ㅁ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅣ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "식",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅣ",
+          "종성": "ㄱ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅆ",
+            "ㅈ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄷ"
+          ]
+        }
+      },
+      {
+        "block": "점",
+        "components": {
+          "초성": "ㅈ",
+          "중성": "ㅓ",
+          "종성": "ㅁ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅊ",
+            "ㅅ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "level": "advanced",
+    "theme": "technology",
+    "image": "/assets/images/camera.png",
+    "korean": "카메라",
+    "romanisation": "kamera",
+    "english": "Camera",
+    "syllables": [
+      {
+        "block": "카",
+        "components": {
+          "초성": "ㅋ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ",
+            "ㅌ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      },
+      {
+        "block": "메",
+        "components": {
+          "초성": "ㅁ",
+          "중성": "ㅔ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅂ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅐ",
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "라",
+        "components": {
+          "초성": "ㄹ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "level": "advanced",
+    "theme": "food",
+    "image": "/assets/images/chocolate.png",
+    "korean": "초콜릿",
+    "romanisation": "chokollit",
+    "english": "Chocolate",
+    "syllables": [
+      {
+        "block": "초",
+        "components": {
+          "초성": "ㅊ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅈ",
+            "ㅅ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "콜",
+        "components": {
+          "초성": "ㅋ",
+          "중성": "ㅗ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㅁ"
+          ]
+        }
+      },
+      {
+        "block": "릿",
+        "components": {
+          "초성": "ㄹ",
+          "중성": "ㅣ",
+          "종성": "ㅅ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ"
+          ],
+          "종성": [
+            "ㄱ",
+            "ㄴ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "level": "advanced",
+    "theme": "transportation",
+    "image": "/assets/images/subway.png",
+    "korean": "지하철",
+    "romanisation": "jihacheol",
+    "english": "Subway",
+    "syllables": [
+      {
+        "block": "지",
+        "components": {
+          "초성": "ㅈ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅊ",
+            "ㅅ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "하",
+        "components": {
+          "초성": "ㅎ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅅ",
+            "ㄱ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      },
+      {
+        "block": "철",
+        "components": {
+          "초성": "ㅊ",
+          "중성": "ㅓ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅈ",
+            "ㅅ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㅁ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "level": "advanced",
+    "theme": "food",
+    "image": "/assets/images/pork-belly.png",
+    "korean": "삼겹살",
+    "romanisation": "samgyeopsal",
+    "english": "Pork Belly",
+    "syllables": [
+      {
+        "block": "삼",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅏ",
+          "종성": "ㅁ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅆ",
+            "ㅈ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "겹",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅕ",
+          "종성": "ㅂ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅓ"
+          ],
+          "종성": [
+            "ㄱ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "살",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅏ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅆ",
+            "ㅈ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㅁ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "level": "advanced",
+    "theme": "nature",
+    "image": "/assets/images/rainbow.png",
+    "korean": "무지개",
+    "romanisation": "mujigae",
+    "english": "Rainbow",
+    "syllables": [
+      {
+        "block": "무",
+        "components": {
+          "초성": "ㅁ",
+          "중성": "ㅜ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅂ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅗ",
+            "ㅡ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "지",
+        "components": {
+          "초성": "ㅈ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅊ",
+            "ㅅ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "개",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅐ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅔ",
+            "ㅏ",
+            "ㅗ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "level": "advanced",
+    "theme": "music",
+    "image": "/assets/images/piano.png",
+    "korean": "피아노",
+    "romanisation": "piano",
+    "english": "Piano",
+    "syllables": [
+      {
+        "block": "피",
+        "components": {
+          "초성": "ㅍ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅂ",
+            "ㅁ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      },
+      {
+        "block": "아",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ",
+            "ㄹ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ",
+            "ㅜ"
+          ]
+        }
+      },
+      {
+        "block": "노",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄹ",
+            "ㅁ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ",
+            "ㅏ"
+          ]
+        }
+      }
+    ]
+  }
+]

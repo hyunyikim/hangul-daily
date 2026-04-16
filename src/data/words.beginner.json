@@ -1,0 +1,431 @@
+[
+  {
+    "id": 1,
+    "level": "beginner",
+    "theme": "food",
+    "image": "/assets/images/rice.png",
+    "korean": "밥",
+    "romanisation": "bap",
+    "english": "Rice",
+    "syllables": [
+      {
+        "block": "밥",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅏ",
+          "종성": "ㅂ"
+        },
+        "decoys": {
+          "초성": ["ㄱ", "ㄷ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄱ", "ㄹ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "level": "beginner",
+    "theme": "food",
+    "image": "/assets/images/water.png",
+    "korean": "물",
+    "romanisation": "mul",
+    "english": "Water",
+    "syllables": [
+      {
+        "block": "물",
+        "components": {
+          "초성": "ㅁ",
+          "중성": "ㅜ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": ["ㄴ", "ㅂ"],
+          "중성": ["ㅗ", "ㅡ"],
+          "종성": ["ㄴ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "level": "beginner",
+    "theme": "food",
+    "image": "/assets/images/soup.png",
+    "korean": "국",
+    "romanisation": "guk",
+    "english": "Soup",
+    "syllables": [
+      {
+        "block": "국",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅜ",
+          "종성": "ㄱ"
+        },
+        "decoys": {
+          "초성": ["ㄷ", "ㄴ"],
+          "중성": ["ㅗ", "ㅡ"],
+          "종성": ["ㄴ", "ㄷ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "level": "beginner",
+    "theme": "food",
+    "image": "/assets/images/bread.png",
+    "korean": "빵",
+    "romanisation": "ppang",
+    "english": "Bread",
+    "syllables": [
+      {
+        "block": "빵",
+        "components": {
+          "초성": "ㅃ",
+          "중성": "ㅏ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": ["ㅂ", "ㅍ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄴ", "ㄱ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "level": "beginner",
+    "theme": "food",
+    "image": "/assets/images/tea.png",
+    "korean": "차",
+    "romanisation": "cha",
+    "english": "Tea",
+    "syllables": [
+      {
+        "block": "차",
+        "components": {
+          "초성": "ㅊ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": ["ㅈ", "ㅅ"],
+          "중성": ["ㅓ", "ㅗ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "level": "beginner",
+    "theme": "body",
+    "image": "/assets/images/eye.png",
+    "korean": "눈",
+    "romanisation": "nun",
+    "english": "Eye",
+    "syllables": [
+      {
+        "block": "눈",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅜ",
+          "종성": "ㄴ"
+        },
+        "decoys": {
+          "초성": ["ㄹ", "ㅁ"],
+          "중성": ["ㅗ", "ㅡ"],
+          "종성": ["ㄹ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "level": "beginner",
+    "theme": "body",
+    "image": "/assets/images/hand.png",
+    "korean": "손",
+    "romanisation": "son",
+    "english": "Hand",
+    "syllables": [
+      {
+        "block": "손",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅗ",
+          "종성": "ㄴ"
+        },
+        "decoys": {
+          "초성": ["ㅆ", "ㅈ"],
+          "중성": ["ㅜ", "ㅓ"],
+          "종성": ["ㄹ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "level": "beginner",
+    "theme": "body",
+    "image": "/assets/images/foot.png",
+    "korean": "발",
+    "romanisation": "bal",
+    "english": "Foot",
+    "syllables": [
+      {
+        "block": "발",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅏ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": ["ㄱ", "ㄷ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄴ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "level": "beginner",
+    "theme": "body",
+    "image": "/assets/images/nose.png",
+    "korean": "코",
+    "romanisation": "ko",
+    "english": "Nose",
+    "syllables": [
+      {
+        "block": "코",
+        "components": {
+          "초성": "ㅋ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": ["ㄱ", "ㅎ"],
+          "중성": ["ㅜ", "ㅓ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "level": "beginner",
+    "theme": "body",
+    "image": "/assets/images/mouth.png",
+    "korean": "입",
+    "romanisation": "ip",
+    "english": "Mouth",
+    "syllables": [
+      {
+        "block": "입",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅣ",
+          "종성": "ㅂ"
+        },
+        "decoys": {
+          "초성": ["ㄴ", "ㅁ"],
+          "중성": ["ㅡ", "ㅔ"],
+          "종성": ["ㅍ", "ㄱ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "level": "beginner",
+    "theme": "nature",
+    "image": "/assets/images/mountain.png",
+    "korean": "산",
+    "romanisation": "san",
+    "english": "Mountain",
+    "syllables": [
+      {
+        "block": "산",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅏ",
+          "종성": "ㄴ"
+        },
+        "decoys": {
+          "초성": ["ㅆ", "ㅈ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄹ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "level": "beginner",
+    "theme": "nature",
+    "image": "/assets/images/river.png",
+    "korean": "강",
+    "romanisation": "gang",
+    "english": "River",
+    "syllables": [
+      {
+        "block": "강",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅏ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": ["ㄷ", "ㄴ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄴ", "ㄹ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "level": "beginner",
+    "theme": "nature",
+    "image": "/assets/images/fire.png",
+    "korean": "불",
+    "romanisation": "bul",
+    "english": "Fire",
+    "syllables": [
+      {
+        "block": "불",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅜ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": ["ㄱ", "ㄷ"],
+          "중성": ["ㅗ", "ㅡ"],
+          "종성": ["ㄴ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "level": "beginner",
+    "theme": "nature",
+    "image": "/assets/images/moon.png",
+    "korean": "달",
+    "romanisation": "dal",
+    "english": "Moon",
+    "syllables": [
+      {
+        "block": "달",
+        "components": {
+          "초성": "ㄷ",
+          "중성": "ㅏ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": ["ㅌ", "ㄱ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄴ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "level": "beginner",
+    "theme": "nature",
+    "image": "/assets/images/sun.png",
+    "korean": "해",
+    "romanisation": "hae",
+    "english": "Sun",
+    "syllables": [
+      {
+        "block": "해",
+        "components": {
+          "초성": "ㅎ",
+          "중성": "ㅐ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": ["ㅅ", "ㄱ"],
+          "중성": ["ㅔ", "ㅏ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "level": "beginner",
+    "theme": "home",
+    "image": "/assets/images/room.png",
+    "korean": "방",
+    "romanisation": "bang",
+    "english": "Room",
+    "syllables": [
+      {
+        "block": "방",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅏ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": ["ㄱ", "ㄷ"],
+          "중성": ["ㅓ", "ㅗ"],
+          "종성": ["ㄴ", "ㄹ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "level": "beginner",
+    "theme": "home",
+    "image": "/assets/images/door.png",
+    "korean": "문",
+    "romanisation": "mun",
+    "english": "Door",
+    "syllables": [
+      {
+        "block": "문",
+        "components": {
+          "초성": "ㅁ",
+          "중성": "ㅜ",
+          "종성": "ㄴ"
+        },
+        "decoys": {
+          "초성": ["ㄴ", "ㅂ"],
+          "중성": ["ㅗ", "ㅡ"],
+          "종성": ["ㄹ", "ㅁ"]
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "level": "beginner",
+    "theme": "numbers",
+    "image": "/assets/images/work.png",
+    "korean": "일",
+    "romanisation": "il",
+    "english": "Work",
+    "syllables": [
+      {
+        "block": "일",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅣ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": ["ㄴ", "ㅁ"],
+          "중성": ["ㅡ", "ㅔ"],
+          "종성": ["ㄴ", "ㅁ"]
+        }
+      }
+    ]
+  }
+]

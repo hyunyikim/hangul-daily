@@ -1,0 +1,598 @@
+[
+  {
+    "id": 19,
+    "level": "intermediate",
+    "theme": "food",
+    "image": "/assets/images/apple.png",
+    "korean": "사과",
+    "romanisation": "sagwa",
+    "english": "Apple",
+    "syllables": [
+      {
+        "block": "사",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅆ",
+            "ㅈ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "과",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅘ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅋ",
+            "ㄷ"
+          ],
+          "중성_V": [
+            "ㅜ",
+            "ㅛ"
+          ],
+          "중성_H": [
+            "ㅓ",
+            "ㅔ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "level": "intermediate",
+    "theme": "education",
+    "image": "/assets/images/school.png",
+    "korean": "학교",
+    "romanisation": "hakgyo",
+    "english": "School",
+    "syllables": [
+      {
+        "block": "학",
+        "components": {
+          "초성": "ㅎ",
+          "중성": "ㅏ",
+          "종성": "ㄱ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅅ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄷ"
+          ]
+        }
+      },
+      {
+        "block": "교",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅛ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅋ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅗ",
+            "ㅠ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "level": "intermediate",
+    "theme": "people",
+    "image": "/assets/images/friend.png",
+    "korean": "친구",
+    "romanisation": "chingu",
+    "english": "Friend",
+    "syllables": [
+      {
+        "block": "친",
+        "components": {
+          "초성": "ㅊ",
+          "중성": "ㅣ",
+          "종성": "ㄴ"
+        },
+        "decoys": {
+          "초성": [
+            "ㅈ",
+            "ㅅ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ"
+          ],
+          "종성": [
+            "ㄹ",
+            "ㅁ"
+          ]
+        }
+      },
+      {
+        "block": "구",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅜ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅋ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅗ",
+            "ㅡ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "level": "intermediate",
+    "theme": "nature",
+    "image": "/assets/images/sea.png",
+    "korean": "바다",
+    "romanisation": "bada",
+    "english": "Sea",
+    "syllables": [
+      {
+        "block": "바",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "다",
+        "components": {
+          "초성": "ㄷ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅌ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "level": "intermediate",
+    "theme": "nature",
+    "image": "/assets/images/sky.png",
+    "korean": "하늘",
+    "romanisation": "haneul",
+    "english": "Sky",
+    "syllables": [
+      {
+        "block": "하",
+        "components": {
+          "초성": "ㅎ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅅ",
+            "ㄱ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "늘",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅡ",
+          "종성": "ㄹ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄹ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅣ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㅁ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "level": "intermediate",
+    "theme": "emotion",
+    "image": "/assets/images/love.png",
+    "korean": "사랑",
+    "romanisation": "sarang",
+    "english": "Love",
+    "syllables": [
+      {
+        "block": "사",
+        "components": {
+          "초성": "ㅅ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㅆ",
+            "ㅈ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "랑",
+        "components": {
+          "초성": "ㄹ",
+          "중성": "ㅏ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "level": "intermediate",
+    "theme": "music",
+    "image": "/assets/images/song.png",
+    "korean": "노래",
+    "romanisation": "norae",
+    "english": "Song",
+    "syllables": [
+      {
+        "block": "노",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄹ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ"
+          ]
+        }
+      },
+      {
+        "block": "래",
+        "components": {
+          "초성": "ㄹ",
+          "중성": "ㅐ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅔ",
+            "ㅏ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "level": "intermediate",
+    "theme": "nature",
+    "image": "/assets/images/tree.png",
+    "korean": "나무",
+    "romanisation": "namu",
+    "english": "Tree",
+    "syllables": [
+      {
+        "block": "나",
+        "components": {
+          "초성": "ㄴ",
+          "중성": "ㅏ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄹ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "무",
+        "components": {
+          "초성": "ㅁ",
+          "중성": "ㅜ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅗ",
+            "ㅡ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "level": "intermediate",
+    "theme": "food",
+    "image": "/assets/images/meat.png",
+    "korean": "고기",
+    "romanisation": "gogi",
+    "english": "Meat",
+    "syllables": [
+      {
+        "block": "고",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅗ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ"
+          ]
+        }
+      },
+      {
+        "block": "기",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "level": "intermediate",
+    "theme": "body",
+    "image": "/assets/images/head.png",
+    "korean": "머리",
+    "romanisation": "meori",
+    "english": "Head",
+    "syllables": [
+      {
+        "block": "머",
+        "components": {
+          "초성": "ㅁ",
+          "중성": "ㅓ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅂ"
+          ],
+          "중성": [
+            "ㅏ",
+            "ㅗ"
+          ]
+        }
+      },
+      {
+        "block": "리",
+        "components": {
+          "초성": "ㄹ",
+          "중성": "ㅣ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅡ",
+            "ㅔ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "level": "intermediate",
+    "theme": "education",
+    "image": "/assets/images/study.png",
+    "korean": "공부",
+    "romanisation": "gongbu",
+    "english": "Study",
+    "syllables": [
+      {
+        "block": "공",
+        "components": {
+          "초성": "ㄱ",
+          "중성": "ㅗ",
+          "종성": "ㅇ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄷ",
+            "ㄴ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅓ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "부",
+        "components": {
+          "초성": "ㅂ",
+          "중성": "ㅜ",
+          "종성": null
+        },
+        "decoys": {
+          "초성": [
+            "ㄱ",
+            "ㄷ"
+          ],
+          "중성": [
+            "ㅗ",
+            "ㅡ"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "level": "intermediate",
+    "theme": "music",
+    "image": "/assets/images/music.png",
+    "korean": "음악",
+    "romanisation": "eumak",
+    "english": "Music",
+    "syllables": [
+      {
+        "block": "음",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅡ",
+          "종성": "ㅁ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅜ",
+            "ㅣ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄹ"
+          ]
+        }
+      },
+      {
+        "block": "악",
+        "components": {
+          "초성": "ㅇ",
+          "중성": "ㅏ",
+          "종성": "ㄱ"
+        },
+        "decoys": {
+          "초성": [
+            "ㄴ",
+            "ㅁ"
+          ],
+          "중성": [
+            "ㅓ",
+            "ㅗ"
+          ],
+          "종성": [
+            "ㄴ",
+            "ㄷ"
+          ]
+        }
+      }
+    ]
+  }
+]
