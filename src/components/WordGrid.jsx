@@ -72,15 +72,13 @@ function JamoCell({ char, isSelected, isShaking, status, cfg, fullWidth, onClick
         flexShrink: 0,
         color: 'var(--color-ink)',
         ...cellStyle(),
-      }}
-    >
+      }}>
       {char && (
         <motion.span
           key={char}
           initial={{ scale: 0.45, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', stiffness: 500, damping: 22 }}
-        >
+          transition={{ type: 'spring', stiffness: 500, damping: 22 }}>
           {char}
         </motion.span>
       )}
@@ -147,8 +145,7 @@ export default function WordGrid({ word, completedCount, currentIdx, placed, sel
       className="flex items-center justify-center"
       style={{ gap: 16 }}
       animate={bouncing ? { y: [0, -18, 0, -10, 0, -5, 0] } : { y: 0 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
-    >
+      transition={{ duration: 0.7, ease: 'easeOut' }}>
       {word.syllables.map((syl, i) => {
         const status = i < completedCount ? 'completed' : i === currentIdx ? 'current' : 'future';
         const vLay = vowelLayout(syl.components['중성']);

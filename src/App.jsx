@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
-import { AnimatePresence } from 'framer-motion'
-import IntroScreen from './components/IntroScreen.jsx'
-import GameScreen from './components/GameScreen.jsx'
-import ResultScreen from './components/ResultScreen.jsx'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import IntroScreen from './components/IntroScreen.jsx';
+import GameScreen from './components/GameScreen.jsx';
+import ResultScreen from './components/ResultScreen.jsx';
 
 function AppRoutes() {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -15,7 +15,7 @@ function AppRoutes() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AnimatePresence>
-  )
+  );
 }
 
 export default function App() {
@@ -25,5 +25,5 @@ export default function App() {
         <AppRoutes />
       </div>
     </BrowserRouter>
-  )
+  );
 }

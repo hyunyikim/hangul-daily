@@ -208,7 +208,7 @@ Animations are a core part of the experience — they make the app feel polished
 | Theme      | Example Words      | English                          |
 | ---------- | ------------------ | -------------------------------- |
 | 🍚 Food    | 밥, 물, 국, 빵, 차 | Rice, Water, Soup, Bread, Tea    |
-| 👁 Body     | 눈, 손, 발, 귀, 코 | Eye, Hand, Foot, Ear, Nose       |
+| 👁 Body    | 눈, 손, 발, 귀, 코 | Eye, Hand, Foot, Ear, Nose       |
 | 🌿 Nature  | 산, 강, 불, 달, 해 | Mountain, River, Fire, Moon, Sun |
 | 🎨 Colours | 빨강, 파랑, 초록   | Red, Blue, Green                 |
 | 🔢 Numbers | 일, 이, 삼, 사, 오 | One, Two, Three, Four, Five      |

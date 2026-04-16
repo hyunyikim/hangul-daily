@@ -9,7 +9,12 @@ const RATINGS = [
   { max: 2, emoji: '👍', label: 'Great', message: 'Well done!' },
   { max: 3, emoji: '🙂', label: 'Good', message: 'Good effort!' },
   { max: 4, emoji: '💪', label: 'Keep Going', message: "You're learning!" },
-  { max: Infinity, emoji: '🌱', label: 'Just Starting', message: 'Every expert was once a beginner!' },
+  {
+    max: Infinity,
+    emoji: '🌱',
+    label: 'Just Starting',
+    message: 'Every expert was once a beginner!',
+  },
 ];
 
 function getRating(mistakes) {
@@ -26,20 +31,23 @@ function SyllableBreakdown({ syllable }) {
         <span key={i} className="flex items-center gap-2">
           <span
             className="text-2xl font-bold leading-none"
-            style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-ink)' }}
-          >
+            style={{
+              fontFamily: 'var(--font-korean)',
+              color: 'var(--color-ink)',
+            }}>
             {part}
           </span>
           {i < parts.length - 1 && (
-            <span className="text-base font-light select-none" style={{ color: 'var(--color-blue-soft)' }}>+</span>
+            <span className="text-base font-light select-none" style={{ color: 'var(--color-blue-soft)' }}>
+              +
+            </span>
           )}
         </span>
       ))}
-      <span className="text-base font-light select-none mx-0.5" style={{ color: 'var(--color-blue-soft)' }}>=</span>
-      <span
-        className="text-2xl font-bold leading-none"
-        style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-blue)' }}
-      >
+      <span className="text-base font-light select-none mx-0.5" style={{ color: 'var(--color-blue-soft)' }}>
+        =
+      </span>
+      <span className="text-2xl font-bold leading-none" style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-blue)' }}>
         {block}
       </span>
     </div>
@@ -74,22 +82,26 @@ export default function ResultScreen() {
   return (
     <motion.div
       className="absolute inset-0 overflow-y-auto"
-      style={{ background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)' }}
+      style={{
+        background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)',
+      }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
-      transition={{ type: 'tween', ease: 'easeOut', duration: 0.35 }}
-    >
+      transition={{ type: 'tween', ease: 'easeOut', duration: 0.35 }}>
       <div className="flex flex-col items-center w-full max-w-md mx-auto px-5 pt-12 pb-12 gap-0">
-
         {/* Checkmark */}
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: 'spring', stiffness: 380, damping: 18, delay: 0.25 }}
+          transition={{
+            type: 'spring',
+            stiffness: 380,
+            damping: 18,
+            delay: 0.25,
+          }}
           className="w-20 h-20 rounded-full flex items-center justify-center mb-5"
-          style={{ background: 'var(--color-jade-soft)' }}
-        >
+          style={{ background: 'var(--color-jade-soft)' }}>
           <svg
             viewBox="0 0 40 40"
             className="w-10 h-10"
@@ -98,8 +110,7 @@ export default function ResultScreen() {
             stroke="currentColor"
             strokeWidth="3.5"
             strokeLinecap="round"
-            strokeLinejoin="round"
-          >
+            strokeLinejoin="round">
             <motion.path
               d="M8 20 L17 29 L32 12"
               initial={{ pathLength: 0 }}
@@ -115,8 +126,7 @@ export default function ResultScreen() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.45 }}
           className="text-lg font-semibold mb-8 tracking-tight"
-          style={{ color: 'var(--color-ink)' }}
-        >
+          style={{ color: 'var(--color-ink)' }}>
           Today's word complete!
         </motion.h1>
 
@@ -126,20 +136,11 @@ export default function ResultScreen() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.55 }}
           className="w-full rounded-3xl bg-white p-6 flex flex-col items-center gap-4 mb-8"
-          style={{ boxShadow: '0 2px 16px rgba(91,143,212,0.08)' }}
-        >
+          style={{ boxShadow: '0 2px 16px rgba(91,143,212,0.08)' }}>
           {!imgError ? (
-            <img
-              src={word.image}
-              alt={word.english}
-              onError={() => setImgError(true)}
-              className="w-32 h-32 rounded-2xl object-cover"
-            />
+            <img src={word.image} alt={word.english} onError={() => setImgError(true)} className="w-32 h-32 rounded-2xl object-cover" />
           ) : (
-            <div
-              className="w-32 h-32 rounded-2xl flex items-center justify-center"
-              style={{ background: 'var(--color-blue-pale)' }}
-            >
+            <div className="w-32 h-32 rounded-2xl flex items-center justify-center" style={{ background: 'var(--color-blue-pale)' }}>
               <span className="text-5xl">{word.emoji}</span>
             </div>
           )}
@@ -148,8 +149,10 @@ export default function ResultScreen() {
             <div className="flex items-center gap-3">
               <span
                 className="text-5xl font-bold leading-none"
-                style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-ink)' }}
-              >
+                style={{
+                  fontFamily: 'var(--font-korean)',
+                  color: 'var(--color-ink)',
+                }}>
                 {word.korean}
               </span>
               <AudioButton text={word.korean} size="sm" />
@@ -165,9 +168,13 @@ export default function ResultScreen() {
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ type: 'spring', stiffness: 300, damping: 22, delay: 0.72 }}
-          className="flex flex-col items-center gap-1 mb-8"
-        >
+          transition={{
+            type: 'spring',
+            stiffness: 300,
+            damping: 22,
+            delay: 0.72,
+          }}
+          className="flex flex-col items-center gap-1 mb-8">
           <span className="text-4xl leading-none mb-1">{rating.emoji}</span>
           <p className="text-xl font-bold tracking-tight" style={{ color: 'var(--color-ink)' }}>
             {rating.label}
@@ -177,8 +184,7 @@ export default function ResultScreen() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.95 }}
             className="text-sm"
-            style={{ color: 'var(--color-ink-muted)' }}
-          >
+            style={{ color: 'var(--color-ink-muted)' }}>
             {rating.message}
           </motion.p>
           <motion.p
@@ -186,8 +192,7 @@ export default function ResultScreen() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 1.05 }}
             className="text-xs mt-0.5"
-            style={{ color: 'var(--color-blue-soft)' }}
-          >
+            style={{ color: 'var(--color-blue-soft)' }}>
             {mistakes === 0 ? 'No mistakes' : `${mistakes} mistake${mistakes === 1 ? '' : 's'}`}
           </motion.p>
         </motion.div>
@@ -206,12 +211,8 @@ export default function ResultScreen() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 1.0 }}
-          className="w-full flex flex-col items-center gap-3 mb-10"
-        >
-          <p
-            className="text-xs font-semibold uppercase tracking-widest mb-1"
-            style={{ color: 'var(--color-ink-muted)' }}
-          >
+          className="w-full flex flex-col items-center gap-3 mb-10">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: 'var(--color-ink-muted)' }}>
             Syllable breakdown
           </p>
           <div className="flex flex-col items-center gap-2.5 w-full">
@@ -233,8 +234,7 @@ export default function ResultScreen() {
           style={{
             background: 'var(--color-blue)',
             boxShadow: '0 4px 16px rgba(91,143,212,0.25)',
-          }}
-        >
+          }}>
           Play Again
         </motion.button>
       </div>

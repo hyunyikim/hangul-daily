@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export default function TileBank({ tiles, onTileTap }) {
-  const cols = tiles.length <= 4 ? 'grid-cols-4' : tiles.length <= 6 ? 'grid-cols-3' : 'grid-cols-4'
+  const cols = tiles.length <= 4 ? 'grid-cols-4' : tiles.length <= 6 ? 'grid-cols-3' : 'grid-cols-4';
 
   return (
     <div className={`grid ${cols} gap-2.5 w-full max-w-xs mx-auto mt-2`}>
@@ -17,11 +17,10 @@ export default function TileBank({ tiles, onTileTap }) {
             fontFamily: 'var(--font-korean)',
             background: 'var(--color-tile-bg)',
             border: '1px solid var(--color-tile-border)',
-          }}
-        >
+          }}>
           {tile}
         </motion.button>
       ))}
     </div>
-  )
+  );
 }

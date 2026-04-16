@@ -7,7 +7,13 @@ import TileBank from './TileBank.jsx';
 import AudioButton from './AudioButton.jsx';
 import { shuffle, vowelLayout, COMPOUND_VOWELS } from '../utils/hangul.js';
 
-const EMPTY_PLACED = { 초성: null, 중성: null, 중성_V: null, 중성_H: null, 종성: null };
+const EMPTY_PLACED = {
+  초성: null,
+  중성: null,
+  중성_V: null,
+  중성_H: null,
+  종성: null,
+};
 
 export default function GameScreen() {
   const navigate = useNavigate();
@@ -148,7 +154,9 @@ export default function GameScreen() {
       if (navigator.vibrate) navigator.vibrate([80, 40, 80, 40, 150]);
       setBouncing(true);
       setTimeout(() => {
-        navigate('/result', { state: { word, level, mistakes: currentMistakes } });
+        navigate('/result', {
+          state: { word, level, mistakes: currentMistakes },
+        });
       }, 1600);
     }
   }
@@ -156,7 +164,9 @@ export default function GameScreen() {
   return (
     <motion.div
       className="absolute inset-0 overflow-y-auto"
-      style={{ background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)' }}
+      style={{
+        background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)',
+      }}
       initial={{ x: '100%' }}
       animate={{ x: 0 }}
       exit={{ opacity: 0, scale: 0.96 }}
@@ -169,7 +179,10 @@ export default function GameScreen() {
             onClick={() => navigate(-1)}
             whileTap={{ scale: 0.88 }}
             className="w-9 h-9 rounded-full flex items-center justify-center cursor-pointer"
-            style={{ background: 'var(--color-blue-pale)', color: 'var(--color-blue)' }}
+            style={{
+              background: 'var(--color-blue-pale)',
+              color: 'var(--color-blue)',
+            }}
             aria-label="Go back">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
               <polyline points="15 18 9 12 15 6" />
