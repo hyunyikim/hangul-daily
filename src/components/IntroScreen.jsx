@@ -48,7 +48,9 @@ export default function IntroScreen() {
   return (
     <motion.div
       className="absolute inset-0 overflow-y-auto"
-      style={{ background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)' }}
+      style={{
+        background: 'linear-gradient(180deg, #E9F0FB 0%, #F2F6FC 50%, #FAFBFE 100%)',
+      }}
       initial={{ x: '100%' }}
       animate={{ x: 0 }}
       exit={{ x: '-100%' }}
@@ -74,7 +76,9 @@ export default function IntroScreen() {
               onClick={() => handleLevelChange(l.id)}
               className={`flex-1 py-2.5 px-1 rounded-xl text-xs font-semibold transition-all duration-200 cursor-pointer
                 ${level === l.id ? 'bg-white shadow-sm' : 'hover:bg-white/40'}`}
-              style={{ color: level === l.id ? 'var(--color-blue)' : 'var(--color-ink-muted)' }}>
+              style={{
+                color: level === l.id ? 'var(--color-blue)' : 'var(--color-ink-muted)',
+              }}>
               {l.label}
             </button>
           ))}
@@ -100,7 +104,12 @@ export default function IntroScreen() {
               )}
 
               {/* Korean Word */}
-              <h2 className="text-7xl font-bold leading-none" style={{ fontFamily: 'var(--font-korean)', color: 'var(--color-ink)' }}>
+              <h2
+                className="text-7xl font-bold leading-none"
+                style={{
+                  fontFamily: 'var(--font-korean)',
+                  color: 'var(--color-ink)',
+                }}>
                 {word.korean}
               </h2>
 
